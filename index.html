@@ -8,7 +8,7 @@
 
 <style>
 
-html, body{
+html,body{
     margin:0;
     width:100%;
     height:100%;
@@ -25,23 +25,39 @@ html, body{
     justify-content:center;
     align-items:center;
 
+    background:black;
+    overflow:hidden;
+}
+
+/* Marco proporcional */
+.game{
+    width:95vw;
+    height:95vh;
+
+    max-width:1400px;
+
+    aspect-ratio:4/3;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
     overflow:hidden;
 }
 
 /* Emulador */
 iframe{
 
-    width:800px;
-    height:600px;
+    width:100%;
+    height:100%;
 
     border:none;
 
-    /* CENTRADO REAL */
-    transform:scale(1.8);
+    transform:scale(1.15);
 
     transform-origin:center center;
 
-    display:block;
+    image-rendering:pixelated;
 }
 
 </style>
@@ -51,10 +67,14 @@ iframe{
 
 <div class="container">
 
+<div class="game">
+
 <iframe
 src="https://archive.org/embed/doom_dos"
 allowfullscreen>
 </iframe>
+
+</div>
 
 </div>
 
